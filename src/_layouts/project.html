@@ -1,0 +1,79 @@
+---
+layout: default
+---
+<section class="project">
+
+  <header class="project-header">
+    <h1 class="project-title">{{ page.title }}</h1>
+    <p class="project-type">{{ page.type }}</p>
+    <p class="project-role">{{ page.role }}</p>
+  </header>
+
+  <div class="project-nav">
+    {% if page.previous.url %}
+      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
+  </div>
+
+  <img class="project-hero-image" src="/assets/images/{{ page.hero-image }}"/>
+
+  <div class="project-details">
+    <div class="project-status">
+      {% if page.status and page.link %}
+      <a href="{{ page.link }}">{{ page.status }}</a>
+      {% elsif page.status %}
+      <a class="disabled" href="#">{{ page.status }}</a>
+      {% endif %}
+    </div>
+    <div class="project-copy">
+      <p class="first">{{ page.copy.first }}</p>
+      <p>{{ page.copy.body }}</p>
+    </div>
+    <div class="project-lists">
+      {% if page.responsibilities %}
+      Responsibilities
+      <ul>
+        {% for item in page.responsibilities %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      {% if page.deliverables %}
+      Deliverables
+      <ul>
+        {% for item in page.deliverables %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      {% if page.experience %}
+      Experience
+      <ul>
+        {% for item in page.experience %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="project-content">
+    {{ content }}
+  </div>
+
+  <div class="project-nav">
+    {% if page.previous.url %}
+      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
+  </div>
+</section>
+
+

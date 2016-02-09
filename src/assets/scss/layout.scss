@@ -1,0 +1,637 @@
+/**
+ * Animation
+ */
+
+body.intro {
+    .site-header,
+    .project-header,
+    .project-nav,
+    .project-hero-image {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+body.intro-animations {
+    .site-header,
+    .project-header,
+    .project-nav {
+        transition: all .5s;
+    }
+
+    .project-hero-image {
+        transition: all .8s;
+    }
+
+    .project-header {
+        transition-delay: .2s;
+    }
+
+    .project-nav,
+    .project-hero-image {
+        transition-delay: .2s;
+    }
+}
+
+/**
+ * Site header
+ */
+.site-header {
+    padding-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
+    height: 30px;
+}
+
+#ec-logo {
+    width: 30px;
+    height: auto;
+
+    margin-right: 20px;
+
+    float: left;
+}
+
+.site-title {
+    line-height: 30px;
+    margin-bottom: 0;
+    float: left;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+}
+
+.site-nav {
+    float: right;
+    line-height: 30px;
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+
+        // Gaps between nav items, but not on the last one
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+    margin: $spacing-unit 0 $spacing-unit*2 0;
+}
+
+.back-to-top {
+    @include col(1/5);
+
+    @include breakpoint(small) {
+        display: none;
+
+        @include col(1/1);
+        margin-bottom: $spacing-unit/2;
+    }
+}
+
+.contact-info {
+    @include col(2/5);
+
+    @include breakpoint(small) {
+        @include col(1/1);
+        margin-bottom: $spacing-unit/2;
+    }
+}
+
+.copyright {
+    color: $grey-color;
+    float: right;
+    text-align: right;
+
+    a {
+        color: $grey-color-dark;
+    }
+
+    @include breakpoint(small) {
+        float: none;
+        @include col(1/1);
+    }
+}
+
+
+/**
+ * Page content
+ */
+.page-content {
+    margin-top: $spacing-unit;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.project-list {
+    margin-left: 0;
+    list-style: none;
+    text-align: center;
+
+    > li {
+        @include col(1/2, $cycle: 2);
+
+        margin-bottom: $spacing-unit;
+
+        @include breakpoint(small) {
+            @include col(1/1, $uncycle: 2);
+        }
+    }
+}
+
+.project-link {
+    display: block;
+    font-size: 24px;
+}
+
+.about-page-header {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: $spacing-unit;
+
+    @include breakpoint(small) {
+        margin-top: $spacing-unit;
+    }
+}
+
+.about-page-content {
+    @include col(3/5, $offset:1/5);
+
+    margin-bottom: 100px;
+
+    @include breakpoint(small) {
+        @include col(1/1);
+        margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Projects
+ */
+.project-header {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: $spacing-unit;
+
+    @include breakpoint(small) {
+        margin-top: $spacing-unit;
+    }
+}
+
+.project-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include breakpoint(medium) {
+        font-size: 36px;
+    }
+}
+
+.project-type {
+    font-size: $small-font-size;
+    margin-bottom: .5em;
+}
+
+.project-role {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.project-details {
+    display: inline-block;
+    margin: 100px 0;
+
+    @include breakpoint(small) {
+        margin: $spacing-unit 0;
+    }
+}
+
+.project-content {
+
+}
+
+.project-lists,
+.project-status {
+    @include col(1/5);
+}
+
+.project-lists {
+    @include shift(-4/5);
+
+    ul {
+        margin-left: 0;
+        list-style: none;
+
+        li {
+            color: $grey-color;
+        }
+    }
+
+    @include breakpoint(small) {
+        @include unshift();
+        @include col(1/1);
+    }
+}
+
+.project-status {
+    @include shift(4/5);
+
+    font-size: 1.4em;
+
+    a.disabled {
+        color: $grey-color;
+        pointer-events: none;
+        cursor: default;
+    }
+
+    @include breakpoint(small) {
+        @include unshift();
+        @include col(1/1);
+
+        font-size: 1em;
+        margin-bottom: $spacing-unit/2;
+    }
+}
+
+.project-copy {
+    @include col(3/5);
+
+    @include breakpoint(small) {
+        @include stack();
+    }
+}
+
+.first {
+    font-size: 30px;
+    margin-bottom: $spacing-unit/2;
+
+    @include breakpoint(small) {
+        font-size: 24px;
+    }
+}
+
+.project-nav {
+    font-size: $small-font-size;
+    display: inline-block;
+    width: 100%;
+
+
+    .prev {
+        float: left;
+        color: $grey-color;
+    }
+
+    .next {
+        float: right;
+        color: $grey-color;
+    }
+}
+
+/**
+ * Medipass
+ */
+.medipass-block-1,
+.medipass-block-2,
+.medipass-block-3 {
+    box-sizing: border-box;
+    display: inline-block;
+
+    width: 100%;
+
+    background: #6dcff6;
+
+    margin-bottom: $spacing-unit*2;
+
+    padding: 5% 10%;
+
+    @include breakpoint(small) {
+        padding: 5%;
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.medipass-block-2 {
+    padding: 5% 10% 0 10%;
+
+    @include breakpoint(small) {
+        padding: 5%;
+    }
+}
+
+.medipass-block-3 {
+    padding: 0 10% 5% 10%;
+
+    @include breakpoint(small) {
+        padding: 5%;
+    }
+}
+
+.medipass-img-1,
+.medipass-img-2 {
+    @include col(1/3);
+
+    @include breakpoint(small) {
+        @include col(1/1);
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.medipass-img-1 {
+    transform: translateY(-25%);
+
+    @include breakpoint(small) {
+        transform: none;
+    }
+}
+
+.medipass-img-3 {
+    @include col(1/3);
+
+    @include breakpoint(small) {
+        @include col(1/1);
+    }    
+}
+
+.medipass-img-4 {
+    @include col(3/6);
+
+    margin-top: -10%;
+
+    @include breakpoint(small) {
+        @include col(1/1);
+        margin-top: 0;
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.medipass-img-5 {
+    @include col(1/3, $offset: 1/6);
+
+    @include breakpoint(small) {
+        @include col(1/1);
+    }
+}
+
+
+.medipass-img-6 {
+    @include col(1/3);
+
+    margin-top: 5%;
+
+    @include breakpoint(small) {
+        @include col(1/1);
+        margin-top: 0;
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.medipass-img-7 {
+    @include col(3/6, $offset: 1/6);
+
+    @include breakpoint(small) {
+        @include col(1/1);
+    }
+}
+
+/**
+ * Inty
+ */
+.inty-block {
+    box-sizing: border-box;
+    display: inline-block;
+
+    width: 100%;
+
+    background: #ebebeb;
+
+    margin-bottom: $spacing-unit*2;
+
+    padding: 5%;
+}
+
+.inty-img-1,
+.inty-img-2,
+.inty-img-3 {
+    @include col(1/3);
+
+    @include breakpoint(small) {
+        @include col(1/1);
+
+        &:not(:last-child) {
+            margin-bottom: $spacing-unit;
+        }
+    }
+}
+
+/**
+ * Hurley Surf
+ */
+.hurley-surf-block {
+    box-sizing: border-box;
+
+    display: inline-block;
+
+    width: 100%;
+
+    background: #77caf9;
+
+    margin-top: 50%;
+
+    margin-bottom: $spacing-unit*2;
+
+    vertical-align: bottom;
+
+    @include breakpoint(small) {
+        padding: 5%;
+        margin-top: 0;
+    }
+}
+
+.hurley-surf-col-1 {
+    width: 25%;
+    margin: -50% 5% 5% 5%;
+
+    text-align: center;
+
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.hurley-surf-col-2 {
+    width: 60%;
+    margin: -50% 5% 5% 0;
+
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.hurley-surf-col-1,
+.hurley-surf-col-2 {
+    @include breakpoint(small) {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.hurley-surf-img-1 {
+    display: inline-block;
+
+    width: 50%;
+
+    margin: 40% 0;
+
+    @include breakpoint(small) {
+        margin: 0 0 5% 0;
+    }
+}
+
+.hurley-surf-img-2 {
+    margin-bottom: 40%;
+
+    @include breakpoint(small) {
+        margin-bottom: 5%;
+    }
+}
+
+.hurley-surf-img-3 {
+    @include breakpoint(small) {
+        margin-bottom: 5%;
+    }
+}
+
+/**
+ * Online Mortgage Application
+ */
+.mortgage-block-1 {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    background: #a3d39c;
+    margin-top: $spacing-unit*4;
+    margin-bottom: $spacing-unit*2;
+
+    img {
+        vertical-align: bottom;
+    }
+
+    @include breakpoint(small) {
+        padding: $spacing-unit/2;
+        margin-top: 0;
+    }
+}
+
+.mortgage-img-1 {
+    display: inline-block;
+    margin: 0 5%;
+    width: 25%;
+
+    @include breakpoint(small) {
+        @include col(1/1);
+        margin: 0 0 $spacing-unit 0;
+    }
+}
+
+.mortgage-img-2 {
+    display: inline-block;
+    margin: -10% 5% 0 0;
+    width: 60%;
+
+    @include breakpoint(small) {
+        @include col(1/1);
+        margin: 0;
+    }
+}
+
+/**
+ * Studio Portfolio Concept
+ */
+.studio-img {
+    width: 100%;
+    height: auto;
+
+    background: #ededed;
+    border: 1px solid #ededed;
+
+    margin-bottom: $spacing-unit*2;
+}
+
+/**
+ * Dick Smith Electronics
+ */
+.dick-smith-block {
+    box-sizing: border-box;
+
+    display: inline-block;
+
+    width: 100%;
+
+    background: #ebebeb;
+
+    margin-top: 90px;
+    margin-bottom: 125px+$spacing-unit*2;
+
+    @include breakpoint(small) {
+        padding: $spacing-unit/2;
+        margin: 0 0 $spacing-unit 0;
+    }
+}
+
+.dick-smith-img-1,
+.dick-smith-img-2 {
+    @include span(2/7, $offset: 1/7);
+    margin-top: -90px;
+
+    @include breakpoint(small) {
+        @include span(1/1);
+        margin: 0;
+    }
+}
+
+.dick-smith-img-2 {
+    margin-bottom: -300px;
+
+    @include breakpoint(small) {
+        margin: $spacing-unit 0 0 0;
+    }
+}
+
+/**
+ * LexisNexis Red
+ */
+.lexisnexis-red-block {
+    position: relative;
+
+    width: 100%;
+
+    background: #959595;
+
+    margin-bottom: $spacing-unit*2;
+
+    @include breakpoint(small) {
+        height: auto;
+
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.lexisnexis-red-img {
+    width: 100%;
+    height: auto;
+
+    border: 1px solid #ededed;
+
+    margin-bottom: $spacing-unit*2;
+}

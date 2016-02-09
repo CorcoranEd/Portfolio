@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Ed Corcoran -- Designer/Developer -- @CorcoranEd
+
+# THANKS
+
+    Kat -- Girlfriend
+    Jesper -- Friend/Designer
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JavaScript
+    Jekyll, Jeet, HTML5 Boilerplate
+    Yeoman, Jekyllized

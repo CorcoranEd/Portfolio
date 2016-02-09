@@ -1,0 +1,17 @@
+{
+  "name": "Ed Corcoran",
+  "version": "0.0.0",
+  "authors": [
+    "Ed Corcoran <hello@ejcorcoran.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}

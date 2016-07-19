@@ -1,6 +1,6 @@
 # Ed Corcoran
 
-> Ed Corcoran&#39;s Portfolio
+Ed Corcoran&#39;s Portfolio
 
 ## To get started
 
@@ -27,4 +27,4 @@ $ gulp deploy
 
 ## Owner
 
-> [Ed Corcoran](ejcorcoran.com)
+[Ed Corcoran](ejcorcoran.com)

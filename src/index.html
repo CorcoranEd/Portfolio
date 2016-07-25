@@ -8,11 +8,11 @@ regenerate: true
 </header>
 
 <ul class="project-list">
-  {% for project in site.projects %}
+  {% for project in site.data.contentful.spaces.portfolio.project %}
     <li>
       <a class="project-link" href="{{ project.url }}">
-        <img src="/assets/images/{{ project.hero-image }}"/>
-        <!-- <h3>{{ project.title }}</h3> -->
+        <img src="{{ project.heroImage.url }}"/>
+        <h3>{{ project.title }}</h3>
       </a>
     </li>
   {% endfor %}

@@ -1,0 +1,30 @@
+---
+project:
+- sys:
+    id: 6nLLDPEybeo8SSEMSi4uYi
+  date: !ruby/object:DateTime 2015-02-03 00:00:00.000000000 Z
+  title: Medipass
+  type: iOS App
+  role: Lead Design & UX
+  heroImage:
+    title: Medipass Hero Image
+    url: "//images.contentful.com/yqtidmbejnor/Vu1Ipp8Ywwq248Kmm66kg/fbec1524a5ff44680597505e78ef8548/medipass-hero.jpg"
+  responsibilities:
+  - User Experience
+  - Art Direction
+  deliverables:
+  - Wireframes
+  - User Flows
+  - Prototypes
+  - UI Design
+  - Style Guide
+  experience:
+  - Client Engagement
+  - Client Workshops
+  - Stakeholder Presentations
+  status: Project in Development
+  caption: An app aimed at solving the problems people encounter when booking, paying,
+    and claiming rebates for health care treatment.
+  body: |-
+    The goal of the project was to leverage the hicaps and medicare pay and claim systems to create a seamless customer experience. From finding a practitioner and booking an appointment, checking in and paying for an apointment, and claiming private health insurance and medicare rebates.
+        Through rounds of user testing and interviews it was a clear objective to create a simple and intuative interface. As lead designer on this project I took this into account and made a focus on following the iOS design guidlines while adding in key elements that extended the experience to fit the project requirements.

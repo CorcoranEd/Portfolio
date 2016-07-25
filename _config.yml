@@ -50,25 +50,35 @@ gems:
   - jekyll-sitemap
 
 # Settings for archives
-jekyll-archives:
-  enabled:
-    - year
-    - month
-    - categories
-    - tags
-  layouts:
-    year: 'year-archive'
-    month: 'month-archive'
-    category: 'category-archive'
-    tag: 'tag-archive'
-  permalinks:
-    year: '/archive/:year/'
-    month: '/archive/:year/:month/'
-    category: '/category/:name/'
-    tags: '/tag/:name/'
+# jekyll-archives:
+#   enabled:
+#     - year
+#     - month
+#     - categories
+#     - tags
+#   layouts:
+#     year: 'year-archive'
+#     month: 'month-archive'
+#     category: 'category-archive'
+#     tag: 'tag-archive'
+#   permalinks:
+#     year: '/archive/:year/'
+#     month: '/archive/:year/:month/'
+#     category: '/category/:name/'
+#     tags: '/tag/:name/'
 
-# Settings for Collections
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
+# # Settings for Collections
+# collections:
+#   projects:
+#     output: true
+#     permalink: /projects/:path/
+
+# Settings for Contentful
+contentful:
+  spaces:
+    - portfolio: # Jekyll _data folder identifier - Required
+        space: yqtidmbejnor        # Required
+        access_token: 6a7d44a84fc432b5c13467d857b18404cc9f705c8ad2e0dae072c78fe8e07ab1 # Required
+        content_types:             # Optional
+          cat: project
+        base_path: /src

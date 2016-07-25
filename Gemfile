@@ -5,11 +5,14 @@ gem 'redcarpet'
 gem 'classifier-reborn'
 
 # jekyll plugins
-gem 'jekyll-archives'
-gem 'jekyll-sitemap'
-gem 'jekyll-paginate'
-gem 'jekyll-feed'
-gem 'jekyll-gist'
+group :jekyll_plugins do
+  gem 'jekyll-archives'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-paginate'
+  gem 'jekyll-feed'
+  gem 'jekyll-gist'
+  gem 'jekyll-contentful-data-import'
+end
 
 # octopress
 gem 'octopress', '~> 3.0'

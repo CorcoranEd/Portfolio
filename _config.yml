@@ -58,7 +58,7 @@ contentful:
 
 # Settings for Data Page Generator
 page_gen:
-  - data: contentful/spaces/portfolio.yaml
+  - data: contentful/spaces/portfolio
     name: title
     index_files: true
     template: project

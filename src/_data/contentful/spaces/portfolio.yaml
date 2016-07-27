@@ -1,6 +1,29 @@
 ---
 project:
 - sys:
+    id: 25l0oUugpC8UOMOqmmeKUe
+  date: !ruby/object:DateTime 2015-03-02 00:00:00.000000000 Z
+  title: Hurley Surf
+  type: iOS App
+  role: Design & UX
+  heroImage:
+    title: hurley-surf-hero
+    url: "//images.contentful.com/yqtidmbejnor/1y6Q0bVmvy6e2AO06EcMeU/a05b4b84b0cf8a26cf4b2d0666baa8d3/hurley-surf-hero.jpg"
+  responsibilities:
+  - User Experience
+  - Design
+  deliverables:
+  - Prototype
+  - UI Design
+  - Style Guide
+  - Responsive Framework
+  status: Download Now
+  link: https://itunes.apple.com/au/app/hurley-surf-coastalwatch/id325080675?mt=8
+  caption: Find Surf Reports, Surf Forecasts and live Surf Cam streams from over 95
+    popular beaches & surf spots — On the number 1 paid sports app in the App Store.
+  body: Access the largest network of surf cams, forecasts, and personalised reporting
+    in Australia from Coastalwatch.
+- sys:
     id: 6nLLDPEybeo8SSEMSi4uYi
   date: !ruby/object:DateTime 2015-02-03 00:00:00.000000000 Z
   title: Medipass

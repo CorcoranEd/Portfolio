@@ -30,9 +30,6 @@ copy:
   body:
     The goal of the project was to leverage the hicaps and medicare pay and claim systems to create a seamless customer experience. From finding a practitioner and booking an appointment, checking in and paying for an apointment, and claiming private health insurance and medicare rebates.
     Through rounds of user testing and interviews it was a clear objective to create a simple and intuative interface. As lead designer on this project I took this into account and made a focus on following the iOS design guidlines while adding in key elements that extended the experience to fit the project requirements.
-
-
-    
 ---
 
 <div class="medipass-block-1">

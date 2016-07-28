@@ -35,6 +35,10 @@ module Jekyll
       #
       # the value of these variables changes according to whether we
       # want to generate named folders or not
+
+      # debug
+      # puts data
+      # puts name
       filename = sanitize_filename(data[name]).to_s
       if index_files
         @dir = dir + (index_files ? "/" + filename + "/" : "")
@@ -125,4 +129,3 @@ module Jekyll
 end
 
 Liquid::Template.register_filter(Jekyll::DataPageLinkGenerator)
-

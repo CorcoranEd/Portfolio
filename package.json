@@ -12,7 +12,9 @@
         "name": "Ed Corcoran",
         "email": "hello@ejcorcoran.com"
     },
-    "engines" : { "node" : ">= 6.3" },
+    "engines": {
+        "node": ">= 6.3"
+    },
     "devDependencies": {
         "autoprefixer": "^6.2.3",
         "babel-core": "^6.4.0",
